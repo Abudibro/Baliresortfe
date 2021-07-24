@@ -1,0 +1,47 @@
+.hero-container {
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+video , .bg-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.bali-awaits {
+    font-size: 8rem;
+    color: black;
+    mix-blend-mode: difference
+}
+
+@media screen and (max-width: 1090px) {
+    .bali-awaits {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .bali-awaits {
+        font-size: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .bali-awaits {
+        font-size: 5rem;
+    }
+}

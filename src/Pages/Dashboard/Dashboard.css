@@ -1,0 +1,100 @@
+.db-body {
+    min-height: 100vh; 
+    overflow: hidden;
+    background: #EFEFEF;
+}
+
+.db-nav {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.db-resorts {
+    width: 90%;
+    margin: 0px;
+}
+
+.db-resort {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+    height: 165px;
+}
+
+.db-img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.db-icons {
+    margin: 10px;
+}
+
+.db-icon {
+    width: 28px;
+    height: 28px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.db-btn-save {
+    margin: 20px;
+    min-height: 3rem;
+    min-width: 8rem;
+    float: right;
+    background-color: black;
+    border: 2px solid black;
+    color: #EFEFEF;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.db-btn-save:hover, .db-icon:hover {
+    opacity: 0.8;
+}
+
+.db-btn-save:active, .db-icon:active {
+    transform: scale(0.9);
+}
+
+.clear { clear: left; display: block; }
+
+@media screen and (max-width: 960px) {
+    .db-resort {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .db-img {
+        height: 165px;
+        width: 250px;
+    }
+
+    .db-btn-save {
+        float: none;
+        left: 50%;
+        right: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-logo {
+        height: 20px;
+        width: auto;
+    }
+}

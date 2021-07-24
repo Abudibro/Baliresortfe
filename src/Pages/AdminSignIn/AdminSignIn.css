@@ -1,0 +1,105 @@
+.asi-body {
+    height: 100vh;
+    background: linear-gradient(180deg, black 50%, #A100F7 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asi-container {
+    height: 520px;
+    width: 520px;
+    background: #EFEFEF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.asi-logo {
+    height: 50px;
+    width: auto;
+    margin: 30px;
+}
+
+.asi-input {
+    width: 50%;
+    text-align: center;
+    margin: 5px;
+}
+
+.asi-input-text {
+    height: 35px;
+    font-size: 1rem;
+    border: 1px solid #A100F7;
+    border-radius: 4px;
+    width: 100%;
+    padding: 7px;
+    /* text-align: center; */
+    color: rgb(29, 29, 29);
+}
+
+.asi-input-label {
+    color :rgb(29, 29, 29);
+}
+
+.asi-input-text:focus {
+    outline: none;
+}
+
+.asi-btn {
+    margin: 30px;
+    min-height: 3rem;
+    min-width: 8rem;
+    background-color: black;
+    border: 2px solid black;
+    color: #EFEFEF;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.asi-btn:hover {
+    background-color: #A100F7;
+    border: 2px solid #A100F7;
+}
+
+.asi-btn:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 648px) {
+    .asi-container {
+        width: 80vw;
+    }
+
+    .asi-logo {
+        width: 50vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 648px) {
+    .asi-container {
+        height: 80vh;
+        min-height: 315px;
+    }
+
+    .asi-logo {
+        height: 10vh;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .asi-logo {
+        height: 30px;
+        width: auto;
+    }
+
+    .asi-input {
+        width: 80%;
+    }
+}
